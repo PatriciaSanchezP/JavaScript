@@ -52,7 +52,9 @@ Se llaman primitivos porque son datos que no pueden ser modificados, ya vienen c
 
 
 
-    - Null: Sirve para definir que un valor es nulo 
+    - Null: Sirve para definir que un valor es nulo.
+
+    - NaN (Not at Number): Sirve para representar un valor que no es un numero. Lo obtenemos si hacemos una operacion con una variable que no es un numero o con una operacion que no es posible.
 
 
 
@@ -93,6 +95,25 @@ console.log(esAdministrador);
 respuestaDeMiCrush = null;
 console.log(respuestaDeMiCrush);
 
+//Ejemplo con valores NaN
+
+operacionMatematica = 0/0;
+console.log(operacionMatematica);
+
+/* TypeOf 
+
+Es una expresion que nos ayuda a saber que tipo de dato es el que estamos evaluando
+
+typeof(elDatoAvaluar);
+
+Todos los resultados que arroja son cadenas con el tipo de dato que estamos evaluando.
+
+
+
+*/
+console.log(typeof(esAdministrador)); //boolean
+console.log(typeof(edadDeFelipe)); // number
+console.log(typeof(operacionMatematica)); //number
 
 /*
 
@@ -107,3 +128,8 @@ Comentario
 Multilinea
 
 */
+
+
+//1- Creamos la función con la palabra reservada function y le ponemos un nombre. Después, abrimos y cerramos parentesis y abrimos y cerramos llaves {}. 
+
+function prepararAguitaDeLimon(limon, agua, hielos, azucar, vaso, cuchara){}

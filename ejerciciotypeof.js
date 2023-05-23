@@ -31,3 +31,10 @@ console.log(typeof(variable14));
 console.log(typeof(variable15));
 console.log(typeof("gansito"));
 
+//Ejercicio juguetería
+
+numeroMuñecas = 14;
+numeroPayasos = 27;
+pesoPayasos = 112; //g
+
+
