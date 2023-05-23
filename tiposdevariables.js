@@ -111,3 +111,40 @@ multiplicacion(5,7);
 multiplicacion(1,4);
 multiplicacion(13,pi);
 multiplicacion(13, ); //Se imprime NaN porque nos falta un parámetro
+
+//Funciones anónimas
+
+let funcionAnonima = function (a, b){
+    operacion = a / b;
+    console.log(operacion);
+}
+
+funcionAnonima(10,5);
+
+//Return
+
+//Funció para dar un saludo personalizado
+function saludo(){
+
+    //declaro e inicializo mi valor del nombre
+    let nombreSaludo = "Felipe";
+    let apellidoSaludo = "Maqueda";
+
+    //Uso ese nombre para personalizar mi saludo
+    console.log("Hola " + nombreSaludo + " que bueno que usas nuestra aplicación");
+
+    //Finalizo la ejecución de mi función, y tomo el dato de la variable llamada nombreSaludo para poder verla (recordemos que esto en un contexto local) y también para poder usarla en otras operaciones
+
+    return nombreSaludo + " " + apellidoSaludo; //Limbo de las variables
+}
+
+//Para poder usar esa variable que hasta este momento sacamos de la función, pero que no sabemos dónde está (porque está en el limbo de las funciones). Y en esta nueva variable ponemos la invocación de la función.
+
+saludo();
+
+let nombreQueSaqueDeMiFuncion = saludo();
+console.log("Estas son las personas que han iniciado sesión en mi aplicación: " + nombreQueSaqueDeMiFuncion);
+
+var nombreIngresadoDesdeElNavegador = prompt("Introduce tu nombre");
+
+console.log("Gracias por entrar a mi página " + nombreIngresadoDesdeElNavegador);
