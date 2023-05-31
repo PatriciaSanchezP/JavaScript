@@ -111,3 +111,115 @@ if (hora < 12){
 } else{
     console.log("Buenas noches, vamos a mimir");
 }
+
+/*Switch
+
+Esta condicional nos permite hacer multiples operaciones y tomar decisiones en funcion de distintos estados de las variables. 
+Evalua una expresion comparando el valor de un dato o variable, y ejecutando la instruccion asociada a ese caso.
+
+
+ - case: Evalua el caso o condicion asociado que dispara un bloque de codigo
+ - break: Termina el proceso sin que tengamos que pasar por todas las iteraciones o casos.
+ - default: Termina el proceso en caso de que ninguna de las evaluaciones sea la correcta (similar al else)
+
+
+switch (expresión o condición){
+    case valor1:
+        //Código que se ejecuta si la condición es igual a valor1
+    break;
+
+    case valor2:
+        //Código que se ejecuta si la condición es igual a valor2
+    break;
+
+    case valor3:
+        //Código que se ejecuta si la condición es igual a valor3
+    break:
+
+    case valor4:
+        //Código que se ejecuta si la condición es igual a valor4
+    break;
+
+    case valor5:
+        //Código que se ejecuta si la condición es igual a valor5
+    break;
+
+    default:
+        //Ingresaste un piso incorrecto (un bloque de codigo que se ejecuta si no se cumple con ninguna de las condiciones anteriores)
+
+}
+*/
+
+//Ejemplo de Switch
+
+let pisoDestino = prompt("Ingresa el piso al que quieras ir (1 al 5)");
+
+switch(pisoDestino) {
+    //para jugar con noestros casos, el tipo de dato debe coincidir para que se ejecute correctamente
+
+    case "1":
+        console.log("Vamos a piso 1 (suena música de elevador de fondo)");
+        break;
+
+    case "2":
+        console.log("Vamos a piso 2 (suena música de elevador de fondo)");
+        break;
+
+    case "3":
+        console.log("Vamos a piso 3 (suena música de elevador de fondo)");
+        break;
+
+    case "4":
+        console.log("Vamos a piso 4 (suena música de elevador de fondo)");
+        break;
+
+    case "5":
+       console.log("Vamos a piso 5 (suena música de elevador de fondo)");
+       break;
+
+       default:
+        console.log("Ingresaste un piso que no es válido")
+
+}
+
+//Ejercicio de Eevee
+
+var elementoEvolucion = prompt("Ingrese el elemento con el que evolucionaras a tu pokemon (piedraFuego, piedraTrueno, piedraAgua, esDeMañana, esDeNoche, rocaMusgo, rocaHielo o conoceMovimientoHada)");
+
+switch (elementoEvolucion) {
+    case "piedraFuego":
+        console.log("Tu Eevee evoluciono a Flaereon");
+        break;
+
+    case "piedraTrueno":
+        console.log("Tu Eevee evoluciono a Jolteon");
+        break;
+
+    case "piedraAgua":
+        console.log("Tu Eevee evoluciono a Vaporeon");
+        break;
+
+    case "esDeMañana":
+        console.log("Tu Eevee evoluciono a Espeon");
+        break;
+
+    case "esDeNoche":
+        console.log("Tu Eevee evoluciono a Umbreon");
+        break;
+
+    case "rocaMusgo":
+        console.log("Tu Eevee evoluciono a Leafeon");
+        break;
+
+    case "rocaHielo":
+        console.log("Tu Eevee evoluciono a Glaceon");
+        break;
+
+    case "conoceMovimientoHada":
+        console.log("Tu Eevee evoluciono a Sylveon");
+        break;
+    
+    default:
+        console.log("Se mantiene tu Eevee.");
+        break;
+}
