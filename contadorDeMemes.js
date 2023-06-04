@@ -11,7 +11,7 @@ let memeRandom = document.querySelector("#memeRandom");
 var valorContador = 0;
 
 
-//Logica de negocio
+//Lógica de negocio
 
 function incrementar() {
     valorContador++;

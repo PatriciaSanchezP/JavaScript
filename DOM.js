@@ -51,7 +51,7 @@ console.log(parrafitos); // Info de HTML Collection es diferente a array
 var parrafosEtiqueta = document.getElementsByTagName("p");
 console.log(parrafosEtiqueta);
 
-//Métodos más acctuales
+//Métodos más actuales
 
 var parrafoQuerySelector = document.querySelector("#parafo1");
 
