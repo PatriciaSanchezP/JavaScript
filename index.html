@@ -8,11 +8,36 @@
     <link> <!-- Aqui van las hojas de estilo-->
 </head>
 <body>
+    <p id="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam fugit incidunt voluptate numquam. Hic, ducimus numquam! Architecto, modi commodi. Nostrum, itaque excepturi. Eligendi repellat autem sed vero. Ipsa, minima?</p>
+    <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cum qui perferendis suscipit accusantium quia cupiditate quas! Laboriosam veniam tempore, nemo pariatur reiciendis fugit repellat quaerat delectus cum nam quibusdam.</p>
+    <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit suscipit possimus at. Et voluptatem exercitationem nam eligendi aut quidem voluptate maxime sed officiis maiores vitae, quasi iste velit deserunt harum!</p>
 
+    <!--Boton con evento onclick en linea (mala práctica)
+    <button onclick="cambiaColor('green')" id="botonCambiarColor">Cambiar color</button>
+    -->
+
+    <button onclick="cambiaColor" id="botonCambiarColor">Botón cambiar color</button>
+
+
+    <!--Los documentos de Scripts (JS) van antes del cierre del body-->
+
+
+
+    <div>
+        <h1>Contador de Memes</h1>
+        <h2 id="numeroContador"> 0 </h2>
+
+        <button id="botonIncrementar">Incrementar</button>
+        <button id="botonDecrementar">Decrementar</button>
+        <button id="botonResetear">Resetear</button>
+
+        <img id="memeRandom" src="" alt="Meme aleatorio" style="display: none;">
+
+    </div> 
 
 
     <!-- Los documentos de Scipts (JS) van antes del cierre del body -->
-    <script src="./ejercicioCiclos.js"></script>
+    <script src="./ejercicioCiclosTarea"></script>
 
 </body>
 </html>

@@ -1,0 +1,24 @@
+/*
+Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla todos los números impares desde el 1 hasta ese número.
+*/
+
+let numero = prompt("Ingresa un número entero positivo");
+
+let numerosImpares = [];
+
+if (numero <= 0) {
+    console.log("El número ingresado no es válido.")
+} else {
+    // El ciclo for itera desde 1 hasta el número ingresado
+    for (i = 1; i <= numero; i++) {
+        // Se verifica que el número sea impar
+        if (i % 2 == 1) {
+            // Se muestran todos los números impares desde el 1 hasta ese número
+            numerosImpares.push(i);
+
+        }
+    }
+
+}
+console.log("Los números impares desde 1 hasta el número ingresado son " + numerosImpares.length + " y son: " + numerosImpares);
+
