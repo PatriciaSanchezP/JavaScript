@@ -70,7 +70,7 @@ let indiceProductoAEliminar = carritoDeCompras.findIndex(function(producto){
     return producto.id === productoAEliminar; //true o false
 });
 
-//Verificar si el índice del elemento que se encontró es válido. Con el findindex para devolver el primer índice del elemento que cumpla con la condición. Si no se encuentrea el elemento que coincida con la condición, entonces vamos a devolver un -1, esto para evitar borrar un elemento que no sea (pensando que  tenemos un índice 0)
+//Verificar si el índice del elemento que se encontró es válido. Con el findindex para devolver el primer índice del elemento que cumpla con la condición. Si no se encuentrea el elemento que coincida con la condición, entonces vamos a devolver un -1, esto para evitar borrar un elemento que no sea (pensando que  tenemos un índice 0).
 
 if (indiceProductoAEliminar !== -1){//0,1,2,3 dispararán true y se actiiva el if. Que el -1 dispara un false y no se activa el if.
     carritoDeCompras.splice(indiceProductoAEliminar,1);
@@ -98,6 +98,8 @@ let total = 0;
 //Agregar un nuevo producto a mi carrito de compras
 carritoDeCompras.push(producto);
 
+carritoDeCompras.push(producto);
+
 //Agregar un nuevo producto a mi carrito de compras
 carritoDeCompras.push(producto);
 
@@ -109,16 +111,6 @@ console.log("El total de tu carrito de compras es de: ", total);
 
 let carritoJSON =JSON.stringify(carritoDeCompras);
 console.log(carritoJSON);
-
-
-
-
-
-
-
-
-
-
 
 
 /*
