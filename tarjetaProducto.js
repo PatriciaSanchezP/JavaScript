@@ -35,6 +35,9 @@ function agregarProductos() {
     <p> Descripcion: ${valorInputDescripcion}</p>
     <p> Precio: $9.99 </p>
     <button class="btn"> Agregar al carrito </button>
+    <br>
+    <br>
+    <br>
 `;
 
     // Agregar esa tarjeta de producto al container especificado (este es el hijo)
